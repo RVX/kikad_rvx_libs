@@ -10,8 +10,13 @@ kicad-templates/
 **/*_backups/
 **/_autosave-*
 *.bak
+*.bck
 fp-info-cache
 *.lck
+
+# ── Python compiled cache ─────────────────────────────────────────────────────
+__pycache__/
+*.pyc
 
 # ── OS artefacts ──────────────────────────────────────────────────────────────
 .DS_Store
