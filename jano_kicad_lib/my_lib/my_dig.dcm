@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX8546
+D Low-Cost, Wide Input Range, Step-Down Controllers with Foldback Current Limit
+K Step down
+F https://datasheets.maximintegrated.com/en/ds/MAX8545-MAX8548.pdf
+$ENDCMP
+#
+$CMP MCP3423
+D ADC 18bit/4ch
+K adc
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22088c.pdf
+$ENDCMP
+#
+$CMP MCP3424
+D ADC 18bit/4ch
+K adc
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22088c.pdf
+$ENDCMP
+#
+#End Doc Library

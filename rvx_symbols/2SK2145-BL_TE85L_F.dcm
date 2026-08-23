@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2SK2145-BL_TE85L,F
+D JFET N-Ch Junction FET 10mA -50V VGDS
+K
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=19704&prodName=2SK2145
+$ENDCMP
+#
+#End Doc Library

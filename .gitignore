@@ -1,0 +1,20 @@
+# ── Official KiCad library clones (5GB+, already public on GitHub) ────────────
+# Obtain these from https://github.com/KiCad
+kicad-footprints/
+kicad-packages3D/
+kicad-symbols/
+kicad-templates/
+
+# ── KiCad auto-generated files ────────────────────────────────────────────────
+**/*-backups/
+**/*_backups/
+**/_autosave-*
+*.bak
+fp-info-cache
+*.lck
+
+# ── OS artefacts ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*~
+.history/

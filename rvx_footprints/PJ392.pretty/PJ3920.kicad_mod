@@ -1,0 +1,150 @@
+(footprint "PJ3920"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "PJ392"
+		(at 0.3048 -4.9276 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1b934c51-3f1e-4824-b263-00f33dbdbb01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PJ3920"
+		(at -0.254 5.08 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e20f1503-b1f4-4377-ade6-5972ad6970f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "PJ3920"
+		(at -0.1524 2.6416 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22d14dde-75aa-40f3-89a2-497fe8e6e3a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Korean-Hroparts-Elec-PJ-3920-3A_C707258.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b97b97d8-88db-41bc-8000-86ab66c8dd0b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Silver C707258 and gold  C707259"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56a3c934-8aaa-4ed7-9dcb-86268cc40e84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 1.8 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "16560ec0-d59e-4b09-b0ce-58f07739c847")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 4 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "0ca51988-1bfe-438e-ae53-5b7ddd969099")
+	)
+	(fp_circle
+		(center 0 0)
+		(end -4.2164 0.0508)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a3e77e16-78dd-4916-b130-e801d3a9c989")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e5bfcf9f-3bdd-45a6-a15d-42952be612d2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "R" thru_hole oval
+		(at -2.5 0 90)
+		(size 3.5 2)
+		(drill oval 2.6 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f07246d1-4435-467f-83bd-0fbdd05a8d58")
+	)
+	(pad "S" thru_hole oval
+		(at 0 -2.5 180)
+		(size 4 2)
+		(drill oval 2.8 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bb19b049-d5d1-4128-9dbd-d782675f9a8d")
+	)
+	(pad "T" thru_hole oval
+		(at 2.5 0 90)
+		(size 3.5 2)
+		(drill oval 2.6 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c8d7ce02-cdca-4c2e-a425-462526cbb151")
+	)
+	(model "${KICAD6_USER_HOME}/Documents/kikad_rvx_libs/3dmodels/pj392.STEP"
+		(offset
+			(xyz 4 0.5 16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 -90)
+		)
+	)
+)

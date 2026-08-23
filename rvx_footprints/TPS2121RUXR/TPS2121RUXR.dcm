@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS2121RUXR
+D 2.7-22V, 56m, 4.5A, Priority Power MUX with Seamless Switchover
+K
+F https://www.ti.com/lit/gpn/TPS2121
+$ENDCMP
+#
+#End Doc Library

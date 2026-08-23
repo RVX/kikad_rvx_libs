@@ -1,0 +1,199 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24AA025UID
+D I2c UID
+K UID
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20005202A.pdf
+$ENDCMP
+#
+$CMP 74AHCT1G08SE-7
+D Single And2
+K TTL and2
+F https://www.diodes.com/assets/Datasheets/74AHCT1G08.pdf
+$ENDCMP
+#
+$CMP ADA4528
+D Precision ultra low noise zero drift op-amp
+K Anlog Devices
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADA4528-1_4528-2.pdf
+$ENDCMP
+#
+$CMP Alphasense_B
+D Alphasense gas sensor type B
+K alphasense gas
+F http://www.alphasense.com/WEB1213/wp-content/uploads/2015/04/COB41.pdf
+$ENDCMP
+#
+$CMP BCP53
+D 1A Ic, 80V Vce, PNP Medium Power Transistor, SOT-223
+K PNP Transistor
+F http://www.onsemi.com/pub_link/Collateral/BCP53T1-D.PDF
+$ENDCMP
+#
+$CMP DRV5825P
+F https://www.ti.com/lit/gpn/drv5825p
+$ENDCMP
+#
+$CMP FDS2734_copy
+D 3.0A Id, 250V Vds, N-Channel MOSFET, 117mOhm Ron, SOIC-8
+K N-Channel MOSFET
+F http://www.onsemi.com/pub/Collateral/FDS2734-D.pdf
+$ENDCMP
+#
+$CMP FDS4935A
+D 7A Id, 30V Vds, HEXFET P-Channel MOSFET, SO-8
+K Dual 30V P-Channel PowerTrench MOSFET
+F https://www.onsemi.com/pdf/datasheet/fds4935a-d.pdf
+$ENDCMP
+#
+$CMP FDS6630A_copy
+D 6.5A Id, 30V Vds, N-Channel MOSFET, 38mOhm Ron, SOIC-8
+K N-Channel MOSFET
+F http://www.onsemi.com/pub/Collateral/FDS6630A-D.pdf
+$ENDCMP
+#
+$CMP IRF7403_copy
+D 9.7A Id, 30V Vds, N-Channel HEXFET Power MOSFET, SO-8
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c
+$ENDCMP
+#
+$CMP LM324
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM324AN
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM324N
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM7812
+D Linear Regulator +12V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP LMC6484
+D Quad CMOS Rail-to-Rail Input and Output Operational Amplifier
+K AmpliOp
+F http://www.ti.com/lit/ds/symlink/lmc6484.pdf
+$ENDCMP
+#
+$CMP LMV324
+D Quad Low-Voltage Rail-to-Rail Output Operational Amplifier
+K AmpliOp
+F http://www.ti.com/lit/ds/symlink/lmv324.pdf
+$ENDCMP
+#
+$CMP MCP465X
+D Digital potentiometer, 256 position, dual output, I2C interface
+K digital potentiometer
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22107B.pdf
+$ENDCMP
+#
+$CMP MCP6004
+D Microchip quad general purpose rail to rail op-amp, 1MHz GBWP
+K quad op amp operational amplifier
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf
+$ENDCMP
+#
+$CMP MCP604
+D Quad 2.7V to 6.0V Single Supply CMOS Operational Amplifier
+K CMOS Single-Supply OPAMP Ampliop
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf
+$ENDCMP
+#
+$CMP MIC2005A
+D 5V switch w/current limit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic20xx.pdf
+$ENDCMP
+#
+$CMP MMDT2907V
+D 60V DUAL PNP SMALL SIGNAL TRANSISTOR IN SOT-563
+K PNP Transistor
+F https://www.diodes.com/assets/Datasheets/ds30564.pdf
+$ENDCMP
+#
+$CMP PBSS301PZ
+D -5.7A Ic, -12V Vce, Small Signal PNP Transistor, SOT-223
+K PNP Transistor
+F https://assets.nexperia.com/documents/data-sheet/PBSS301PZ.pdf
+$ENDCMP
+#
+$CMP Q_PMOS_DDGSDD
+D Transistor P-MOSFET with substrate diode (general)
+K pmos p-mos p-mosfet transistor
+$ENDCMP
+#
+$CMP REF-1930
+D REF19xx Low-Drift, Low-Power, Dual-Output, VREF and VREF/ 2 Voltage References
+K REF 1930
+F http://www.ti.com/lit/ds/symlink/ref1930.pdf
+$ENDCMP
+#
+$CMP Si4162DY_copy
+D 19.3A Id, 30V Vds, TrenchFET N-Channel Power MOSFET, SO-8
+K N-Channel MOSFET
+F http://www.vishay.com/docs/68967/si4162dy.pdf
+$ENDCMP
+#
+$CMP TL064
+D Quad Low-Power JFET-Input Operational Amplifiers, Very Low Power
+K AmpliOp
+F http://www.ti.com/lit/ds/symlink/tl064.pdf
+$ENDCMP
+#
+$CMP TL072
+D Dual Op amp (low power)
+K ampliop
+$ENDCMP
+#
+$CMP TL072_M
+D Dual Op amp (low power)
+K ampliop
+$ENDCMP
+#
+$CMP TL074
+D Quad Low-Noise JFET-Input Operational Amplifiers, Low Power
+K AmpliOp Mos
+F http://www.ti.com/lit/ds/symlink/tlc074.pdf
+$ENDCMP
+#
+$CMP TL074_M
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP TL084
+D JFET-Input Operational Amplifiers
+K ampliop
+F http://www.ti.com/lit/ds/symlink/tl082.pdf
+$ENDCMP
+#
+$CMP TLC274
+D Precision Quad Op amp. Mos
+K AmpliOp Mos
+F http://www.ti.com.cn/cn/lit/ds/symlink/tlc274.pdf
+$ENDCMP
+#
+$CMP TPL-0102
+D Digital potentiometer, 256 position, dual output, I2C interface
+K digital potentiometer
+F http://www.ti.com/lit/ds/symlink/tpl0102-100.pdf
+$ENDCMP
+#
+$CMP Vin
+K POWER, PWR
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADA4528
+D 2MHz, Operational Transconductance Amplifier (OTA), gM spread 2:1
+K intersil
+F http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf
+$ENDCMP
+#
+#End Doc Library

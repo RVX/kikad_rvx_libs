@@ -1,0 +1,262 @@
+(kicad_symbol_lib
+	(version 20251024)
+	(generator "kicad_symbol_editor")
+	(generator_version "10.0")
+	(symbol "SK6812MINIRGBW"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SK"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Value" "SK6812MINIRGBW-NW-P6-A"
+			(at 1.27 -6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SK6812MINIRGBW:SK6812MINIRGBW"
+			(at 0 -6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/3466e77db733da4cb88774d7b3acd193/SK6812MINIRGBW-XX-P6-A-0000.pdf"
+			(at 14.224 -6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Addressable RGBW led  3.5x3.7x1.9mm 6PIN"
+			(at 0 -6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SK6812MINIRGBW_1_1"
+			(rectangle
+				(start -5.0799 5.08)
+				(end 5.0799 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.667 1.905)
+				(end 2.667 -4.445)
+				(stroke
+					(width 0)
+					(type solid)
+					(color 199 198 198 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -0.381 -0.635)
+				(end 0.889 -1.905)
+				(stroke
+					(width 0)
+					(type default)
+					(color 220 212 214 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 0.254 1.27)
+				(end 1.524 0)
+				(stroke
+					(width 0)
+					(type default)
+					(color 201 201 201 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 0.254 -2.54)
+				(end 1.524 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+					(color 220 217 218 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "R"
+				(at 0.127 -1.397 0)
+				(effects
+					(font
+						(size 0.6 0.6)
+						(color 231 226 224 1)
+					)
+				)
+			)
+			(text "B"
+				(at 0.635 0.635 0)
+				(effects
+					(font
+						(size 0.5 0.5)
+						(color 216 216 216 1)
+					)
+				)
+			)
+			(text "G"
+				(at 0.635 -3.175 0)
+				(effects
+					(font
+						(size 0.5 0.5)
+						(color 225 216 220 1)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -7.62 3.81 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -3.81 0)
+				(length 2.54)
+				(name "DIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 -3.81 180)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "DOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 3.81 180)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
