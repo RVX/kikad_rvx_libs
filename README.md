@@ -36,11 +36,11 @@ When you switch machine or reinstall KiCad, you only need to set that one variab
 
 ---
 
-## ── SETUP ──────────────────────────────────────────────────────────────────
+# Setup by Operating System
 
 ---
 
-## 🐧 Manjaro / Linux
+## Manjaro / Linux
 
 ### Step 1 — Clone the repo
 
@@ -88,7 +88,7 @@ KiCad → **Preferences → Configure Paths → + (Add)**
 
 ---
 
-## 🪟 Windows 11 (work)
+## Windows 11
 
 ### Step 1 — Install Git for Windows (if not already)
 
@@ -143,7 +143,7 @@ KiCad → **Preferences → Configure Paths → + (Add)**
 
 ---
 
-## 🍎 macOS
+## macOS
 
 ### Step 1 — Install Git (if not already)
 
@@ -176,9 +176,7 @@ Identical to the Manjaro steps above (same KiCad menus, same `${RVX_LIBS}/...` p
 
 ---
 
-## ── DAILY WORKFLOW ─────────────────────────────────────────────────────────
-
----
+# Daily Workflow
 
 ## Keeping libraries up to date
 
@@ -211,9 +209,7 @@ Then on your other machine: `git pull`
 
 ---
 
-## ── REFERENCE ──────────────────────────────────────────────────────────────
-
----
+# Reference
 
 ## Variable cheat sheet
 
