@@ -235,6 +235,96 @@ After a KiCad reinstall, just:
 3. Re-add libraries via Manage Symbol / Footprint Libraries
 4. Done — the files were never touched
 
+## KiCad 9 to 10 Migration Notes (Flatpak)
+
+Some third-party footprints still reference old variables such as:
+
+- `${KICAD8_3RD_PARTY}`
+- `${KICAD9_3RD_PARTY}`
+- `${KIPRJMOD}/EASYEDA_MODELS/...`
+
+This can cause red X markers in 3D models even when the files exist elsewhere.
+
+### Stable path strategy
+
+Use two roots instead of one:
+
+1. **PCM content root** (KiCad-managed downloads in Flatpak)
+2. **RVX custom root** (this repo)
+
+Recommended mapping:
+
+| Variable | Should point to |
+|---|---|
+| `KICAD8_3RD_PARTY` | `/home/USER/.var/app/org.kicad.KiCad/data/kicad/10.0/3rdparty` |
+| `KICAD9_3RD_PARTY` | `/home/USER/.var/app/org.kicad.KiCad/data/kicad/10.0/3rdparty` |
+| `KICAD10_3RD_PARTY` | RVX repo root (`RVX_LIBS`) |
+| `KICAD_3RD_PARTY` | RVX repo root (`RVX_LIBS`) |
+
+This keeps old library references working while preserving your custom library layout.
+
+### One-command repair after updates
+
+From repo root:
+
+```bash
+cd ~/kicad_libs/rvx
+bash scripts/kicad_fix_3rdparty_compat.sh
+```
+
+What this script does:
+
+1. Reapplies Flatpak overrides for KiCad 8/9/10 third-party variables.
+2. Keeps symbol directory variables stable for Flatpak KiCad.
+3. Refreshes project-level compatibility links used by `${KIPRJMOD}/EASYEDA_MODELS/...`.
+4. Verifies representative JLCPCB and SparkFun model paths.
+
+### If one footprint still shows a red X
+
+Run this quick search to find unresolved model references:
+
+```bash
+rg -n "\$\{KIPRJMOD\}/EASYEDA_MODELS|\$\{KICAD8_3RD_PARTY\}|\$\{KICAD9_3RD_PARTY\}" /path/to/project --glob "*.kicad_pcb" --glob "*.kicad_mod"
+```
+
+Then add an alias model file (symlink) to the expected name in the compatibility pool.
+
+## Should we install all JLCPCB, LCSC, EasyEDA catalogs?
+
+Short answer: **yes, but selectively**.
+
+### Why selective is better
+
+1. Full catalogs increase 3D load time, indexing time, and noise in library pickers.
+2. JLCPCB and LCSC ecosystems overlap heavily (many parts are the same sourcing world).
+3. EasyEDA imports often duplicate footprints/models you already have from JLC packages.
+
+### Real size data from this system
+
+Current KiCad PCM 3rdparty totals:
+
+- Footprints: about **111 MB**
+- 3D models: about **328 MB**
+- Symbols: about **68 MB**
+
+Current package examples:
+
+- CDFER JLCPCB package:
+    - Footprints: **~0.9 MB**
+    - 3D models: **~115 MB**
+    - Symbols: **~6.4 MB**
+- SparkFun package:
+    - Footprints: **~8.4 MB**
+    - 3D models: **~214 MB**
+    - Symbols: **~4.1 MB**
+
+### Practical recommendation
+
+1. Keep **JLCPCB core** package enabled (good manufacturing alignment).
+2. Use EasyEDA/LCSC import tools **on demand** for only the parts you need.
+3. Periodically clean unused packages to keep KiCad fast and predictable.
+4. Keep this repo as your curated, stable layer for project-critical parts.
+
 ## Troubleshooting
 
 | Symptom | Fix |
